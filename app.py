@@ -4,12 +4,13 @@ import streamlit as st
 # Set basic page configuration
 st.set_page_config(
     page_title="Churn_Prediction_Model",
-    page_icon="osha",
+    page_icon="👧",
     layout="centered"
 )
 
 # Load the model
-model = pickle.load(open("model.pkl", "rb"))
+with open("logreg_model.pkl", "rb") as model_file:
+    model = pickle.load(model_file)
 
 # Create page header
 st.markdown("Customer Churn Prediction Model")
