@@ -12,7 +12,7 @@ st.set_page_config(
 model = pickle.load(open("model.pkl", "rb"))
 
 # Create page header
-st.markdown("#Customer Churn Prediction Model")
+st.markdown("Customer Churn Prediction Model")
 
 # Take inputs from user
 age = st.text_input("Customer Age:")
